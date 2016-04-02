@@ -33,7 +33,7 @@ public class LinearLayoutA extends LinearLayout {
     @Override
     public boolean onInterceptTouchEvent(MotionEvent ev) {
         Log.i(TAG, "onInterceptTouchEvent: ");
-        return super.onInterceptTouchEvent(ev);
+        return true;
     }
 
     @Override
@@ -41,4 +41,21 @@ public class LinearLayoutA extends LinearLayout {
         Log.i(TAG, "onTouchEvent: ");
         return super.onTouchEvent(event);
     }
+
+    @Override
+    public boolean canScrollHorizontally(int direction) {
+        return super.canScrollHorizontally(direction);
+    }
+
+    @Override
+    public boolean canScrollVertically(int direction) {
+        return super.canScrollVertically(direction);
+    }
+
+    @Override
+    public void cancelLongPress() {
+        super.cancelLongPress();
+    }
+
+
 }

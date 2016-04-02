@@ -33,6 +33,7 @@ public class MyView extends View {
     @Override
     public boolean onTouchEvent(MotionEvent event) {
         Log.i(TAG, "onTouchEvent: ");
-        return super.onTouchEvent(event);
+//        return super.onTouchEvent(event);
+        return true;
     }
 }

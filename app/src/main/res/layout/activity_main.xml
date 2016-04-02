@@ -5,8 +5,37 @@
     android:layout_height="match_parent"
     tools:context="com.example.jinliang.testevent.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+    <com.example.jinliang.testevent.LinearLayoutA
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="40dp"
+        android:background="@color/colorPrimary">
+
+        <com.example.jinliang.testevent.LinearLayoutB
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="40dp"
+            android:background="@color/colorAccent">
+
+            <com.example.jinliang.testevent.LinearLayoutC
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="40dp"
+                android:background="@color/colorPrimary">
+
+                <com.example.jinliang.testevent.MyView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="40dp"
+                    android:background="@color/colorAccent" />
+
+
+            </com.example.jinliang.testevent.LinearLayoutC>
+
+
+        </com.example.jinliang.testevent.LinearLayoutB>
+
+    </com.example.jinliang.testevent.LinearLayoutA>
+
+
 </RelativeLayout>
