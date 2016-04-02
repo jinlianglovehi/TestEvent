@@ -2,6 +2,7 @@ package com.example.jinliang.testevent;
 
 import android.content.Context;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.widget.LinearLayout;
 
@@ -25,17 +26,20 @@ public class LinearLayoutB extends LinearLayout {
 
     @Override
     public boolean dispatchTouchEvent(MotionEvent ev) {
+        Log.i(TAG, "dispatchTouchEvent: ");
         return super.dispatchTouchEvent(ev);
     }
 
 
     @Override
     public boolean onInterceptTouchEvent(MotionEvent ev) {
+        Log.i(TAG, "onInterceptTouchEvent: ");
         return super.onInterceptTouchEvent(ev);
     }
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
+        Log.i(TAG, "onTouchEvent: ");
         return super.onTouchEvent(event);
     }
 }
